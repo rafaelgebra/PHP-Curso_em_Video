@@ -9,7 +9,7 @@
 <body>
     <h1>Dados do Servidor</h1>
     <?php
-        phpinfo();
+        phpinfo(); // Para pegar informações do servidor usar esse comando.
     ?>
 </body>
 </html>

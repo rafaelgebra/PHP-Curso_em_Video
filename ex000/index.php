@@ -9,8 +9,8 @@
 <body>
     <h1>
         <?php 
-            echo "Olá, troxa! \u{1F30E}";
-            echo 'Olá, troxa! \u{1F30E}';
+            echo "Olá, troxa! \u{1F30E} <br>"; // só funciona com duas aspas.
+            echo 'Olá, troxa! \u{1F30E}'; // Não funciona com uma aspa
         ?>
     </h1>
     <p>Vamos tentar nos livrar da maldição</p>
