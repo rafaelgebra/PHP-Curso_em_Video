@@ -1,0 +1,17 @@
+                        Aula O PHP por dentro
+
+O script PHP é inicializado com a seguinte tag <?php?> dentro do <body> 
+
+A super tag PHP <?php "Aqui dentro vai os comando "?> // É a mais atual e ultilizada.
+
+A short open tag <? "Aqui dentro vai os comandos "?> // Não é muito usada e nem aconselhado usar.
+
+A ASP tag <%%> // Não funciona mais, era usado na interligar 
+
+As váriaveis no PHP não são "declaradas" elas são "inicidas".
+
+
+
+
+
+
