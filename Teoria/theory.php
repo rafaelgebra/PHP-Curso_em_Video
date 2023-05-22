@@ -69,9 +69,10 @@ Para comentar no PHP uma das forma de fazer comentario é usar //
 
                                 Aula - Tipos Primitivos
 
-No PHP tem 3 tipos/classificação de tipos Primitivos
+                    No PHP tem 3 tipos/classificação de tipos Primitivos
 
 1 - Escalares
+
 $sobrenome = "Silva" // esse tipo é considerado string. String segnifica sequência de letras, números e símbulos, sempre representados entre aspas.
 
 $idade = 34 // Esse tipo é considerado int ou integer. é um valor numérico inteiro, aquele que vem sem a parte decimal
@@ -105,12 +106,49 @@ Exemplos e explicação de tipos primitivos
 
                 $num = (int) 3e2; //é o mesmo que dizer 3 x 10² = 300
                 var_dump($num);
-    Resultado   int(300) //Para transformar de forma forçada o numero em inteiro "coerção" é só por depois do = (int) ex: $num = (int) 3e2;
+    Resultado   int(300) //Para transformar de forma forçada o numero em inteiro "coerção" é só por depois do = (int) isso pode ser feito com outro tipos primitivos.
+    ex:
+    $num = (int) 3e2;
+    $num = (float) 3e2;
+    $num = (string) 3e2;
 
-                $vet = [6, 2.5, "Maria", 3, false];
-                print "O vetor é $vet"  Não suporta. ERRO
-                var_dump($vet)
+                $casado = false;
+                var_dump($casado);
+    Resultado   bool(false)
+        Mas se fazer isso com o print/echo da um certo erro.
+                $casado = false;
+                print"O valor de casado é $casado";
+    Resultado   O valor de casado é //não aparece o resultado porque no php o false no print e vazio, se o resultado fosse true o resultado seria 1.
+
+
+
+
+
 
 2 - Compostos
 
-3 - Especiais
+Array
+        $vet = [6, 2.5, "Maria", 3, false];
+        print "O vetor é $vet"  Não suporta. ERRO
+        var_dump($vet)
+
+Object
+        class Pessoa {
+            private string $nome;   
+        }
+
+        $p = new Pessoa;
+        var_dump($p)
+
+3 - Especiais - Será estudado mais para frente
+
+Null
+
+Resource
+
+Callabe
+
+Mixed // surgio a partir da versão 8.0 representa todos os outros tipos primitivos
+
+
+
