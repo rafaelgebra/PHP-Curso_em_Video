@@ -69,4 +69,48 @@ Para comentar no PHP uma das forma de fazer comentario é usar //
 
                                 Aula - Tipos Primitivos
 
-                                
+No PHP tem 3 tipos/classificação de tipos Primitivos
+
+1 - Escalares
+$sobrenome = "Silva" // esse tipo é considerado string. String segnifica sequência de letras, números e símbulos, sempre representados entre aspas.
+
+$idade = 34 // Esse tipo é considerado int ou integer. é um valor numérico inteiro, aquele que vem sem a parte decimal
+
+$peso = 85.9 // Esse é o tipo float, double ou real. (a palavra REAL não é usada mais desda verção 7.4 do PHP) para o PHP não tem diferença entre esses tipos float e double. 
+
+$casado = true // Esse é o tipo bool ou boolean. Um valor lógico ou Booleano, que aceita apenas os valores verdadeiro ou falso(true ou false). 
+
+"RJ"        -> string
+3.1415      -> float/double
+17          -> int/integer
+true        -> bool/booleano
+""          -> string
+-19         -> int/interger
+"false"     -> string
+0x1A        -> int/integer // base númerica hexadecimal todo número hexadecimal começa com 0x
+3e2         -> float/double // Quando tem a letra (e) no meio dos números significa elevado a potência
+"1024"      -> string
+
+exemplo de bases numérica
+        0x = hexadecimal, 0b = binário, 0 = Octal
+
+Exemplos e explicação de tipos primitivos
+                $num = 310;
+                print "o valor da variável e $num";
+
+                $v = 3.14;
+                var_dump($v);
+    Resultado   float(3.14)    
+
+
+                $num = (int) 3e2; //é o mesmo que dizer 3 x 10² = 300
+                var_dump($num);
+    Resultado   int(300) //Para transformar de forma forçada o numero em inteiro "coerção" é só por depois do = (int) ex: $num = (int) 3e2;
+
+                $vet = [6, 2.5, "Maria", 3, false];
+                print "O vetor é $vet"  Não suporta. ERRO
+                var_dump($vet)
+
+2 - Compostos
+
+3 - Especiais

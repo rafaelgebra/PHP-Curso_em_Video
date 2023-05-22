@@ -10,7 +10,8 @@
     <h1>Teste de tipos primitivos</h1>
 
     <?php 
-            // 0x = hexadecimal, 0b = binário, 0 = Octal
+            
+        // 0x = hexadecimal, 0b = binário, 0 = Octal
         //$num = 310;
         //print "o valor da variável e $num";
 
@@ -20,6 +21,7 @@
         //$num = (int) 3e2; //é o mesmo que dizer 3 x 10² = 300
         //var_dump($num);
         //print "O valor e $num";
+        
         // para transformar de forma forçada o numero em inteiro "coerção" é só por depois do = (int)
 
 
