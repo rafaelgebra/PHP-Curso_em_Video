@@ -150,5 +150,32 @@ Callabe
 
 Mixed // surgio a partir da versão 8.0 representa todos os outros tipos primitivos
 
+                <!--AULA - Manipulação de string com PHP-->
+
+                double quoted - Aspas Duplas e Aspas Simples
+
+Pois as aspas é string.
+
+O operador de concatenação de string (concatenation operator) é: <!--(é o ponto .)-->
+Não é o simbolo de +, em outras linguagem é utilizado para concatenar e para somar números, mas no PHP NÃO.
+
+Nas aspas duplas tem a interpretação do conteúdo nas aspas simples não.
+Ex: 
+"PHP\u1{F418}" -> vai aparecer o emoji. Porque tem a interpretar o conteúdo
+'PHP\u1{F418}' -> não vai aparecer o emoji. Porque o sistema vai ler de forma literal
+
+Para constantes não funciona as aspas simples e duplas. Para resolver usando a concatenação
+        Ex: const ESTADO = "SP";
+            print "Moro no ESTADO"; -> Moro no ESTADO   = Não tem interpretação
+            print 'Moro no ESTADO'; -> Moro no ESTADO   = Não tem interpretação
+            print "Moro no".ESTADO; -> Moro no SP       = Tem interpretação
+
+            
 
 
+
+<!--Essas duas não é tão comum de achar-->
+
+Heredoc
+
+Nowdor
