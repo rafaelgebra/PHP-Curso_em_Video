@@ -170,12 +170,51 @@ Para constantes não funciona as aspas simples e duplas. Para resolver usando a 
             print 'Moro no ESTADO'; -> Moro no ESTADO   = Não tem interpretação
             print "Moro no".ESTADO; -> Moro no SP       = Tem interpretação
 
-            
+
+Para anular as aspas usar contra barra antes \. Isso se chama sequênçia de escape
+            Ex:
+                $nom = "Rodrigo";
+		        $snom = "Nogueira";
+		        print"$nom \"Nogueira\" $snom";
+
+    Resultado   Rodrigo "Nogueira" Nogueira
+
+Para aspas duplas "" tem muitas seguencias de escapes.
+        \n      -> nova linha
+        \t      -> Sinal de tabulação horizontal 'ESPAÇO'
+        \\      -> exibir a barra invertida
+        \$      -> exibir o sinal $
+        \u{}    -> Codepoint Unicode
+
+A unica sequênçia de escape para aspas simples '' é \'\'
 
 
+                <!--Essas duas não é tão comum de achar-->
 
-<!--Essas duas não é tão comum de achar-->
+                <!--Heredoc--> 
+"Vantagem" consegue fazer a quebra de linha no formato texto "LIXO"
 
-Heredoc
+$canal = "Curso em Vídeo";
+    $ano = date('Y');
 
-Nowdor
+    echo <<< TESTE
+        Olá galeta do $canal!
+                        Tudo bem com vocês?
+            Como esta sendo esse ano de $ano?
+
+
+    TESTE;
+
+                <!--Nowdor-->
+"Vantagem" consegue fazer a quebra de linha no formato texto sem interpretação - "LIXO"
+
+$canal = "Curso em Vídeo";
+    $ano = date('Y');
+
+    echo <<< 'TESTE'
+        Olá galeta do $canal!
+                        Tudo bem com vocês?
+            Como esta sendo esse ano de $ano?
+
+
+    TESTE;
