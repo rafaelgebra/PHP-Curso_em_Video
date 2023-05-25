@@ -201,8 +201,6 @@ $canal = "Curso em Vídeo";
         Olá galeta do $canal!
                         Tudo bem com vocês?
             Como esta sendo esse ano de $ano?
-
-
     TESTE;
 
                 <!--Nowdor-->
@@ -215,6 +213,38 @@ $canal = "Curso em Vídeo";
         Olá galeta do $canal!
                         Tudo bem com vocês?
             Como esta sendo esse ano de $ano?
-
-
     TESTE;
+
+
+                <!-- Aula - Obtendo dados de formulário com PHP (parte 1)-->
+
+    Arquivos dentro da pasta Modelo. Nesta pasta contém inicialmente um arquivo HTML e CSS, eles serão usados durante o curso.
+
+                <!-- Aula - Obtendo dados de formulário com PHP (parte 2)-->     
+                
+    Para pegar os dados de um arquivo PHP tem que primeiro criar o arquivo com o nome de ligação, no exemplo o nome do arquivo é cad.php.
+
+    Para pegar os dados do HTML e enviar para o PHP 
+
+    <?php 
+            $nome = $_GET["nome"] ?? "sem nome"; // ?? esse é o operador "nulo"
+            $sobrenome = $_GET["sobrenome"] ?? ""; // ?? esse é um operador "nulo"
+            print "<p>É um prazer te conhecer, <strong>$nome $sobrenome</strong>! Este é o meu site"
+
+        ?>
+
+Apartir do PHP 7 tem um operador novo é o "operador de qualessencia nula" esse é o operador ?? -> é vai receber valores padronizados e evita certos erros. 
+
+                <!--Aula - Expressões Aritméticas com PHP-->
+
+Ordem de precendência - sem parenteses
+
+**      -> Potência.
+* / %   -> Multiplicação, Divisão e Resto da Divição "Modulo".
++ -     -> Adição e Subitração.
+
+                <!--Aula Funções Aritméticas do PHP-->
+
+Funções Matemáticas sem os operadores Aritméticas.
+abs() -> valor absoluto "O valor absoluto retira o sinal de - menos e deixa ele positivo"
+base_convert() -> Conversor de número " consegue converter números Octal, Hexadecimal, binario ..."
