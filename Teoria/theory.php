@@ -246,5 +246,92 @@ Ordem de precendência - sem parenteses
                 <!--Aula Funções Aritméticas do PHP-->
 
 Funções Matemáticas sem os operadores Aritméticas.
-abs() -> valor absoluto "O valor absoluto retira o sinal de - menos e deixa ele positivo"
-base_convert() -> Conversor de número " consegue converter números Octal, Hexadecimal, binario ..."
+
+abs(-10) -> valor absoluto. "O valor absoluto retira o sinal de - menos e deixa ele positivo".
+
+base_convert() -> Conversor de número " consegue converter números Octal, Hexadecimal, binario ..." EX:
+        <!--
+            $r = base_convert(1011, 10, 2);
+            print("a resposta é $r");
+            a resposta é 1111110011
+        -->
+
+        1011    -> número a ser convertido
+        10      -> qual a base numérica do número anterior
+        2       -> qual a base numérica a ser convertida
+
+ceil(), floor(), round() -> funcões de arredondamento "ceil" para cima, "floor" para baixo,  "round" arredondamento aritimético.
+
+hypot() -> Calcula a hipotenusa usando os catetos
+
+intdiv() -> Divisão inteira.
+    Ex:
+        <!--
+        $r = intdiv(5, 2);
+        print("a resposta é $r");
+        a resposta é 2
+        -->
+
+min(), max() -> mostra o menor e o maior valor.
+    Ex: de min()
+
+        <!--
+        $r = min(5,3,4,7,6,9,1,8, 2);
+	    print("a resposta é $r");
+        a resposta é 1
+        -->
+
+    Ex: de max()
+
+        <!--
+        $r = min(5,3,4,7,6,9,1,8, 2);
+        print("a resposta é $r");
+        a resposta é 1
+        -->
+pi() -> sempre que precisar do valor de pi pode fazer por um FUNÇÃO "pi()" ou por uma contante M_PI, essa contante nãoi precisa declarar porque é declarada internamente no PHP.
+
+    Ex 1:
+        <!--
+        $r = pi();
+        print("a resposta é $r");
+        a resposta é 3.1415926535898
+        -->
+
+    Ex 2:
+        <!--
+        $r = M_PI; 
+        print("a resposta é $r");
+        a resposta é 3.1415926535898
+        -->
+
+pow() -> Com essa função consegue o valor de potência para as vensões antigas e quando usa a função, perde a ordem de precedência.
+
+    Ex com  operador de potência **: 
+        <!--$r = 5 ** 2;
+        print("a resposta é $r")
+        a resposta é 25
+        -->
+
+    Ex com a função de potência pow(5,2).
+        <!--$r = pow(5, 2);
+        print("a resposta é $r")
+        a resposta é 25
+        -->
+
+sin(), cos(), tan() -> para calcular o angulo, grau.
+
+sqrt() -> Calcula a raiz quadrada.
+    Ex:
+        <!--
+        $r = sqrt(81);
+	    print("a resposta é $r");
+        a resposta é 9
+        -->
+    Ex 2: como conseguir raiz quadrada por potência.
+        <!--
+        $r = 81 ** (1/2);
+        print("a resposta é$r")
+        a resposta é 9
+        -->
+
+

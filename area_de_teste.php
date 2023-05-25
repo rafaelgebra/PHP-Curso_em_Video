@@ -9,10 +9,7 @@
 <body>
     <h1>Aréa de teste PHP</h1>
     <?php 
-    $canal = "Curso em Vídeo";
-    $ano = date('Y');
-    print"Eu estou fazenso curso no canal " .$canal ." no ano de " .$ano;
-
+    
     
     
     
