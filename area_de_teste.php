@@ -9,10 +9,10 @@
 <body>
     <h1>Aréa de teste PHP</h1>
     <?php 
-    
-    
-    
-    
+      $r = "22r" + "2";
+      print("A resposta é $r ");
+      var_dump($r);
+  
     ?>
     
 </body>

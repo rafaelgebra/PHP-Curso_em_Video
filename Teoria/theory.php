@@ -237,11 +237,30 @@ Apartir do PHP 7 tem um operador novo é o "operador de qualessencia nula" esse 
 
                 <!--Aula - Expressões Aritméticas com PHP-->
 
-Ordem de precendência - sem parenteses
++   -> Adição
+-   -> Subtração
+*   -> Multiplicação
+/   -> Divisão real
+%   -> Modulo (Resto da divição inteira)
+**  -> Exponenciação (potência)
+
+
+5 + 2 = 7
+5 - 2 = 3
+5 * 2 = 10
+5 / 2 = 2.5
+5 % 2 = 1
+5 ** 2 = 25 // o operador de potência não funciona antes do PHP 5.6
+
+
+
+    <!--Ordem de precendência - sem parenteses-->
 
 **      -> Potência.
 * / %   -> Multiplicação, Divisão e Resto da Divição "Modulo".
-+ -     -> Adição e Subitração.
++ -     -> Adição e Subtração.
+
+
 
                 <!--Aula Funções Aritméticas do PHP-->
 
@@ -333,5 +352,41 @@ sqrt() -> Calcula a raiz quadrada.
         print("a resposta é$r")
         a resposta é 9
         -->
+
+                    <!--Aula - Operadores Aritiméticos do PHP-->
+
+O simbolo + no PHP só funciona para somar dois mesmo que ambus sejão uma STRING números pois ele é Operador aritimético de adição.
+    ex:
+        <!--
+        $r = "2" + "2";
+        print"A resposta é ($r)"
+        a resposta é 4
+        -->
+        caso use a função var_dump($r) vai mostrar que que o resultado é valor numérico e inteiro:  
+        
+        <!--
+        $r = "2" + "2";
+	    print("A resposta é " );
+        var_dump($r);
+        A resposta é int(4)
+        -->
+
++   -> Adição
+-   -> Subtração
+*   -> Multiplicação
+/   -> Divisão real
+%   -> Modulo (Resto da divição inteira)
+**  -> Exponenciação (potência)
+
+
+5 + 2 = 7
+5 - 2 = 3
+5 * 2 = 10
+5 / 2 = 2.5
+5 % 2 = 1
+5 ** 2 = 25 // o operador de potência não funciona antes do PHP 5.6
+
+
+                <!--Aula - Cinco desafios PHP para iniciantes-->
 
 

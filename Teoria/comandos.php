@@ -13,4 +13,4 @@ $_POST é uma vavriável super global "Ela vai funcionar independente da declara
 
 $_REQUEST  é uma vavriável super global "Ela vai funcionar independente da declaração" <!--A vantagem é que fonciona tanto com method="get" como method="post declarado no HTML--> // a $_REQUEST é uma junção de $_GET, $_POST e $_COOKIES.
 
-?? no PHP isse é o simbulo que operador de qualessencia nula
+?? no PHP isse é o simbolo que operador de qualessencia nula
