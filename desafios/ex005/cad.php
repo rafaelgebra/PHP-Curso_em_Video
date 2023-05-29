@@ -16,8 +16,11 @@
         $num = $_GET["num"] ?? "0";
         $num_antecessor = $num - 1;
         $num_sucessor = $num + 1;
-        print("O número escolhido foi $num ");
-        print("O seu <em>antecessor</em> é $num_antecessor ");
+        print("O número escolhido foi <strong>$num</strong>.") ;
+        // também pode ser frito da segunte forma sem as variáveis.
+        // print("O seu seu <em>antecessor</em> é $num_antecessor" . ($num - 1) ."\n")
+        print("O seu <em>antecessor</em> é $num_antecessor ") ;
+         // print("O seu <em>sucessor</em> é $num_sucessor" .($num + 1) ."\n")
         print("O seu <em>sucessor</em> é $num_sucessor ")          
         ?>
         <p><a href="javascript:history.go(-1)"> u\{2B05} <-Voltar</a></p>
