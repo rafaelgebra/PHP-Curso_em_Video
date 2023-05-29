@@ -389,4 +389,11 @@ O simbolo + no PHP só funciona para somar dois mesmo que ambus sejão uma STRIN
 
                 <!--Aula - Cinco desafios PHP para iniciantes-->
 
+                                d002
+
+rand(n1, n2) // É a forma mais antiga de gerar números aleatórios é de 1951. Linear Congrential Gererator. Nesse caso não interfere se o primeiro número é maior ou menor. vai funcionar da mesma forma.
+
+mt_rand(n1, n2)  //É mais 4 vezes rápido que rand() foi criado em 1997. E bem mais confiavel. É uma regra tem que começar com o valor inferior na primeira informação.
+
+random_int() // É usado quando precisa de segurança, póis gera número aleatório criptograficamente seguros.
 
