@@ -397,3 +397,19 @@ mt_rand(n1, n2)  //É mais 4 vezes rápido que rand() foi criado em 1997. E bem 
 
 random_int() // É usado quando precisa de segurança, póis gera número aleatório criptograficamente seguros.
 
+umas das formas de fazer para voltar para a pagina anterio é usando o:
+    javascript <button onclick="javascript:window.location.href='index.html'">&#x2B05 Voltar</button>
+
+converção de valores.
+    print"Seus R\$" . number_format($moeda_br, 2, ",", ".")
+    o number_format, vai mostrar os valor formatato tipo moeda, "mas em padrão americano".
+o número 2 dentro das colchetes sifnifica que vai ter duas casas decimais.
+A virgula "," e o ponto "." dentro das aspas "", significa:
+o primeiro separador é do decimal agora vai ser virgula ","
+o segundo separador é de milhar aora vai se ponto "."
+
+Existe outro geito mais proficional para fazer isso, 
+Existe uma biblioteca internalização monetaria, segue a baixo exemplo.
+
+        $padrao = numfmt_create("pt-BR", NumberFormatter::CURRENCY);
+        print"Seus " . numfmt_format_currency($padrao, $moeda_br,"BRL"). " equivalem a " . numfmt_format_currency($padrao, $converção, "USD");
