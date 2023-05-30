@@ -413,3 +413,10 @@ Existe uma biblioteca internalização monetaria, segue a baixo exemplo.
 
         $padrao = numfmt_create("pt-BR", NumberFormatter::CURRENCY);
         print"Seus " . numfmt_format_currency($padrao, $moeda_br,"BRL"). " equivalem a " . numfmt_format_currency($padrao, $converção, "USD");
+        
+
+
+                        Desafio 5
+
+Dica ->Dentro do HTML na TAG input number sozinha não permite numeros fraçionarios, por isso, depois do id="" por a "função step="0.01" 
+<input type="number" name="num" id="idnum" step="0.001">
