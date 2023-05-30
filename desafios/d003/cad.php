@@ -9,8 +9,7 @@
 </head>
 <body>
     <main>
-    <h1>Conversor de Moedas</h1>
-
+        <h1>Conversor de Moedas</h1>
         <?php
         $moeda_br = $_GET["valor"] ?? 0;
         $cotação = 5.17;//$GET[""]; 
