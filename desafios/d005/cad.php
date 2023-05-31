@@ -12,7 +12,7 @@
         <h1>Analizandor de Número Real</h1>
         <?php 
         $num = $_GET["num"];
-        $numReal = $_GET["num"][0] ;
+        $numReal = $_GET["num"][0] ?? 0;
         
         print"Analisando o número <strong>R$" . number_format($num, 3, ",", ".") ." </strong>informado pelo usuário. <br>";
 
