@@ -420,3 +420,34 @@ Existe uma biblioteca internalização monetaria, segue a baixo exemplo.
 
 Dica ->Dentro do HTML na TAG input number sozinha não permite numeros fraçionarios, por isso, depois do id="" por a "função step="0.01" 
 <input type="number" name="num" id="idnum" step="0.001">
+
+
+                    <!--Aula - Superglobais no PHP-->
+
+Quando é passado o nome direto na URL é chamado de QUERY STRING, lembrando que mesmo se for passado um número será considerado STR, porque esta sendo passado pelo QUERY STRING.
+
+As mais usadas:
+    $_GET
+    A $_GET é uma Array. -> mostra os dados na URL e envia os dados na URL.
+
+    $_POST
+    A $_POST é uma Array. -> Não mostra os dados na URL, MAS tem dentro da opção inspecionar do navegador. Envia os dados pelos pacotes "CABEÇALHO"
+
+    $_REQUEST. -> Pega os dados pelas duas opções acima, transformando tudo em uma array "vetor".
+
+    $_COOKIE -> variáveis temporarias.
+
+
+
+    $_FILES -> Quando faz um upload de um arquivo consegui pegar dados 
+
+    $_SESSION -> Variável de sessão entre páginas. 
+
+    $_ENV -> Variável de ambiante do servidor
+
+    $_SERVER -> ??
+
+    $GLOBALS -> Ela é a mais completa, consegue mostrar tudo o que as outras tem. "exige mais do sistema"
+
+                <!--Aula - Formularios retroalimentados-->
+

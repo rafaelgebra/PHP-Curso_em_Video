@@ -12,16 +12,19 @@
         <h1>Analizandor de Número Real</h1>
         <?php 
         $num = $_GET["num"];
-        $numReal = $_GET["num"][0] ?? 0;
+
         
         print"Analisando o número <strong>R$" . number_format($num, 3, ",", ".") ." </strong>informado pelo usuário. <br>";
 
-        print"$numReal";
+        $int = (int) $num;
+        $fra = $num - $int;
         
 
-
-
+        print"<ul><li> A parte inteira do número é <strong>" .number_format($int, 0, ",",".") ."</strong></li>";
+        print"<li> A parte fracionada do número é <strong>" .number_format($fra, 3, ",",".") ."</strong></li></ul>";
+        
         ?>
+        <button onclick="javascript:history.go(-1)">Voltar</button>
 
     </main>
     
