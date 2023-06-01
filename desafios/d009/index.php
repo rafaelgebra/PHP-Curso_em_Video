@@ -5,8 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio d009 PHP</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <?php 
+    $valor1 = $_GET['valor1']??0;
+    $valor2 = $_GET['valor2']??0;
+    $peso1 = $_GET['peso1']??0;
+    $peso2 = $_GET['peso2']??0;
+    ?>
+    <main>
+        <h1>Médias Aritméticas</h1>
+        <form action="<?=$_SERVER['PHP_SELF']?>" method="get">
+            <label for="valor1">1° Valor</label>
+            <input type="number" name="valor1" id="valor1" value="<?=$valor1?>">
+            <label for="peso1">1° Peso</label>
+            <input type="number" name="peso1" id="peso1" value="<?=$peso1?>">
+            <label for="valor2">2° Valor</label>
+            <input type="number" name="valor2" id="valor2" value="<?=$valor2?>">
+            <label for="peso2">2° Peso</label>
+            <input type="number" name="peso2" id="peso2" value="<?=$peso2?>">
+            <input type="submit" value="Calucular Médidas"> 
     
+        </form>
+
+    </main>
+    <section>
+            <h2>Cálculo das Médidas</h2>
+            <?php 
+            $valorTotal = $valor1 + $valor2;
+            $mediaSimples = $valorTotal / 2;
+            $baseMediaPonderada = ($peso1*$valor1)+($peso2*$valor2); 
+            $basePeso = $peso1+$peso2;
+            $mediaPonderada = $baseMediaPonderada / $basePeso;
+
+
+            print"<p>Analisando os valores $valor1 e $valor2: </p> <br>";
+            print"<ul><li>A Média Aritimética Simples entre os valores <strong>$valor1 e $valor2 é igua a ".number_format($mediaSimples,2,".",".")." </strong>.</li> <br>
+            <li>A Média Aritumética Poderada com peso <strong>$peso1 e $peso2 é igual a ".number_format($mediaPonderada,2,",",".").".</strong></li></ul>";
+            
+            ?>
+
+
+        </section>
 </body>
 </html>
