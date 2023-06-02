@@ -9,22 +9,28 @@
 </head>
 <body>
     <?php 
-    $AnoAtual = date('Y');
-
+    $anoAtual = date('Y');
+    $anoNasceu = $_GET['anonasceu']??0;
+    $anoFuturo = $_GET['anofuturo']??0;
+    $idade = $anoFuturo - $anoNasceu
     ?>
     <main>
         <h1>Calculando a sua idade</h1>
-        <form action="<?$_SERVER['PHP_SELF']?>" method="get">
+        <form action="<?=$_SERVER['PHP_SELF']?>" method="get">
             <label for="anonasceu">Em que ano você nasceu?</label>
-            <input type="number" name="anonasceu" id="anonasceu">
-            <label for="anofuturo">Quer saber sua idade em que ano?(atualmente estamos em <?=$AnoAtual?>)</label>
-      
-    
+            <input type="number" name="anonasceu" id="anonasceu" value="<?=$anoNasceu?>">
+            <label for="anofuturo">Quer saber sua idade em que ano?(atualmente estamos em <?=$anoAtual?>)</label>
+            <input type="number" name="anofuturo" id="anofuturo" value="<?=$anoFuturo?>">
+            <input type="submit" value="Qual será minha idade?">
+
         </form>
          
     </main>    
     <section>
+        <h2>Resultado</h2>
+        
         <?php 
+        print"Quem nasceu em $anoNasceu vai ter <strong>$idade anos </strong> em $anoFuturo ";
         
         
         
