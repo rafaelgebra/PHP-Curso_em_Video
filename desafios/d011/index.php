@@ -30,7 +30,7 @@
     <section>
         <h2>Resultado do Reajuste</h2>
         <?php 
-        print"O produto que custava R\$".number_format($preco,2,",",".")." com <strong> $percentual% de aumento</strong> vai passar a custar <strong>R\$".number_format($precoFinal,2,",",".")."</strong> a partir de agora";
+        print"O produto que custava R\$".number_format($preco,2,",",".")." com <strong> $percentual% de aumento</strong> vai passar a custar <strong>R\$".number_format($precoFinal,2,",",".")."</strong> a partir de agora.";
         
         ?>
 
