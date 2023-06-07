@@ -8,16 +8,16 @@
 </head>
 <body>
     <?php 
-    $salarioMinimo = 1380;
-    $salario = $_GET['salario']??0;
+    $salarioMinimo = 1380.60;
+    $salario = $_GET['salario']?? $salarioMinimo;
     ?>
 
     <main>
         <h1>Informe seu Salário</h1>
         <form action="<?=$_SERVER['PHP_SELF']?>" method="get">
             <label for="salario">Salário (R$)</label>
-            <input type="number" name="salario" id="salario"  value="<?=$salario?>" step="0.01">
-            <p>Considerando que o salário mínimo é de <strong>R$1.380,00</strong></p>
+            <input type="number" name="salario" id="salario"  value="<?=$salario?>" min="0" step="0.01">
+            <p>Considerando que o salário mínimo é de <strong>R$<?=number_format($salarioMinimo,2,",",".")?></strong>.</p>
             <input type="submit" value="Calcular">
 
         </form>
