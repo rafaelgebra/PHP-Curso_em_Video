@@ -10,29 +10,41 @@
 <body>
     <?php 
         $dividendo = $_GET['dividendo']??0;
-        $divisor = $_GET['divisor']??0;
+        $divisor = $_GET['divisor']??1;
     ?>
     <main>
         <h1>Somador de valores</h1>
             <form action="<?=$_SERVER['PHP_SELF']?>" method="get">
                 <label for="dividendo">Dividendo</label>
-                <input type="number" name="dividendo" id="dividendo" value="<?=$dividendo?>">
+                <input type="number" name="dividendo" id="dividendo" min="0" value="<?=$dividendo?>">
                 <label for="divisor">Divisor</label>
-                <input type="number" name="divisor" id="divisor" value="<?=$divisor?>">
+                <input type="number" name="divisor" id="divisor" min="1" value="<?=$divisor?>">
                 <input type="submit" value="Analizar">                
             </form>
     </main>
     <section>
         <h2>Estrutuda da Divisão</h2>
         <?php 
-            $cosiente = $dividendo / $divisor;
-            $intCosiente = (int)$cosiente;
+            // também da para fazer assim 
+            // quociente = intdiv($dividendo, $divisor);
+            $quociente = (int)($dividendo / $divisor);
+            
             $resto = ($dividendo % $divisor);
-            print"O valor do dividendo é $dividendo <br>";
-            print"O valor do divisor é $divisor <br>";
-            print"O valor do cosiente $intCosiente <br>";
-            Print"O resto da divisão é $resto";
+
         ?>
+        <table class="divisao">
+            <tr>
+                <td><?=$dividendo?></td>
+                <td><?=$divisor?></td>
+            </tr>
+            <tr>
+                <td><?=$resto?></td>
+                <td><?=$quociente?></td>
+            </tr>
+
+        </table>
+
+
     </section>
 
     
