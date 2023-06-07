@@ -10,8 +10,8 @@
 <body>
     <?php 
     $anoAtual = date('Y');
-    $anoNasceu = $_GET['anonasceu']??0;
-    $anoFuturo = $_GET['anofuturo']??0;
+    $anoNasceu = $_GET['anonasceu']?? 0;
+    $anoFuturo = $_GET['anofuturo']?? $anoAtual;
     $idade = $anoFuturo - $anoNasceu
     ?>
     <main>
