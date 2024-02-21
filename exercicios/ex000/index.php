@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ept-br">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +11,7 @@
         <?php 
             echo "Olá, troxa! \u{1F30E} <br>"; // só funciona com duas aspas.
             echo 'Olá, troxa! \u{1F30E}'; // Não funciona com uma aspa
+
         ?>
     </h1>
     <p>Vamos tentar nos livrar da maldição</p>
