@@ -8,8 +8,20 @@
 </head>
 <body>
     <h1>Dados do Servidor</h1>
+
+    <script language="php"> // Não funciona mais
+
+        /*
+        $nome = "Rafael";
+        print"<p>O meu nome é $nome</p>";
+        echo "<p>O meu nome é $nome</p>";
+        */
+    </script>
     <?php
-        phpinfo(); // Para pegar informações do servidor usar esse comando.
+        //phpinfo(); // Para pegar informações do servidor usar esse comando.
+        $nome = "Rafael";
+        print"<p>O meu nome é $nome</p>";
+        echo "<p>O meu nome é $nome</p>";
     ?>
 </body>
 </html>
