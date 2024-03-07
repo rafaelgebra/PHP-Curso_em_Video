@@ -69,15 +69,15 @@ Para comentar no PHP uma das forma de fazer comentario é usar //
 
                                 Aula - Tipos Primitivos
 
-                    No PHP tem 3 tipos/classificação de tipos Primitivos
+                    <!--No PHP tem 3 tipos/classificação de tipos Primitivos-->
 
-1 - Escalares
+1 - Escalares -> String, int/integer, float/double, bool/boolean.
 
 $sobrenome = "Silva" // esse tipo é considerado string. String segnifica sequência de letras, números e símbulos, sempre representados entre aspas.
 
 $idade = 34 // Esse tipo é considerado int ou integer. é um valor numérico inteiro, aquele que vem sem a parte decimal
 
-$peso = 85.9 // Esse é o tipo float, double ou real. (a palavra REAL não é usada mais desda verção 7.4 do PHP) para o PHP não tem diferença entre esses tipos float e double. 
+$peso = 85.9 // Esse é o tipo float, double ou real. (a palavra REAL não é usada mais desda versão 7.4 do PHP) para o PHP não tem diferença entre esses tipos float e double. 
 
 $casado = true // Esse é o tipo bool ou boolean. Um valor lógico ou Booleano, que aceita apenas os valores verdadeiro ou falso(true ou false). 
 
